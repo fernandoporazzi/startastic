@@ -1,0 +1,24 @@
+{
+  "name": "startastic",
+  "version": "1.0.0",
+  "description": "A star rating system powered by NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandoporazzi/startastic.git"
+  },
+  "keywords": [
+    "star",
+    "rating",
+    "node"
+  ],
+  "author": "Fernando Porazzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandoporazzi/startastic/issues"
+  },
+  "homepage": "https://github.com/fernandoporazzi/startastic#readme"
+}
