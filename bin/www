@@ -1,0 +1,7 @@
+const app = require('../app');
+const log = require('winston');
+
+app.set('port', process.env.PORT || 3000);
+var server = app.listen(app.get('port'), function(){
+  log.info("Express server is up");
+});
