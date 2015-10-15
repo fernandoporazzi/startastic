@@ -4,7 +4,8 @@
   "description": "A star rating system powered by NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/fernandoporazzi/startastic/issues"
   },
-  "homepage": "https://github.com/fernandoporazzi/startastic#readme"
+  "homepage": "https://github.com/fernandoporazzi/startastic#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cluster": "^0.7.7",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.11"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
 }
