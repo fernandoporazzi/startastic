@@ -2,15 +2,19 @@ extends layout
 
 block content
   .mdl-layout.mdl-js-layout
-    header.mdl-layout__header.mdl-layout__header--scroll
-      .mdl-layout__header-row
-        span.mdl-layout-title Startastic
-        .mdl-layout-spacer
+
+    include header
+
     main.mdl-layout__content
       .page-content
-        .demo-card-square.mdl-card.mdl-shadow--2dp
-          .mdl-card__title.mdl-card--expand
-            h2.mdl-card__title-text Movie Title
-          .mdl-card__supporting-text lorem ipsum
-          .mdl-card__actions.mdl-card--border
-            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect link
+        each val, idx in movies
+          .demo-card-square.mdl-card.mdl-shadow--2dp
+            .mdl-card__title.mdl-card--expand(style='background: url(#{val.cover})')
+              h2.mdl-card__title-text #{val.name}
+            .mdl-card__supporting-text #{val.desc}
+            .mdl-card__actions.mdl-card--border
+              each v, i in [1, 2, 3, 4, 5]
+                button.mdl-button.mdl-button--fab.mdl-button--mini-fab.mdl-button--colored(data-rate='#{v}', data-item='#{val._id}', data-js='vote-button')
+                  i.material-icons #{v}
+              .progress-bar
+                .progress-bar__completed(style='width: #{val.average}%')

@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "name": "Titanic",
+      "desc": "Desc one",
+      "genre": "Drama",
+      "year": 2000,
+      "cover": "http://placehold.it/300x300/abc123",
+      "stars": [3, 4, 1, 5, 2, 2, 4, 1, 1, 1, 1, 1, 1,1 ],
+      "tags": ["Titanic", "Novel", "Ice"]
+    },
+    {
+      "name": "The Hunger Games",
+      "desc": "a Hunger Games description lorem ipsum",
+      "genre": "Action",
+      "year": 2012,
+      "cover": "http://placehold.it/300x300/123abc",
+      "stars": [2, 5, 4, 1, 1, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+      "tags": ["hunger", "games", "jogos", "vorazes"]
+    },
+    {
+      "name": "The Expandables",
+      "desc": "a brief description about the Expandables movie",
+      "genre": "Action",
+      "year": 2011,
+      "cover": "http://placehold.it/300x300/852bfa",
+      "stars": [1, 0, 5, 3, 5, 5, 4],
+      "tags": ["Expandables"]
+    },
+    {
+      "name": "Fast and Furious",
+      "desc": "put some description here motherfucker",
+      "genre": "Action",
+      "year": 2007,
+      "cover": "http://placehold.it/300x300/a1a91b",
+      "stars": [1, 0, 5, 3, 5, 5, 4],
+      "tags": ["fast", "Furious", "paul walker", "vin diesel"]
+    },
+    {
+      "name": "Unbroken",
+      "desc": "Unbroken description goes over here",
+      "genre": "War",
+      "year": 2014,
+      "cover": "http://placehold.it/300x300/476651",
+      "stars": [4, 5, 5, 5],
+      "tags": ["japan", "Unbroken", "war"]
+    },
+    {
+      "name": "Batman",
+      "desc": "Nanananananananananan",
+      "genre": "Not defined",
+      "year": 2014,
+      "cover": "http://placehold.it/300x300/b4be35",
+      "stars": [5, 2, 3, 1, 2, 5, 5, 5, 3, 4, 5, 5, 2, 3],
+      "tags": ["batman", "joker"]
+    },
+    {
+      "name": "Thor",
+      "desc": "hey there, write some desc here",
+      "genre": "Not defined",
+      "year": 2013,
+      "cover": "http://placehold.it/300x300/abc987",
+      "stars": [5, 2, 3, 4, 4, 3, 4, 5, 5, 2, 4, 4, 4, 4, 5, 4, 4, 4, 4, 3, 4, 4],
+      "tags": ["thor"]
+    }
+
+  ]
+}
