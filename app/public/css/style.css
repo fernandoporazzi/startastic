@@ -1,3 +1,9 @@
-body {
+.page-content {
+  padding: 40px 80px 50px 80px;
+}
 
+.demo-card-square.mdl-card {
+  height: 320px;
+  float: left;
+  margin: 10px;
 }

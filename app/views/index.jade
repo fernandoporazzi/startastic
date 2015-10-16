@@ -1,4 +1,16 @@
 extends layout
 
 block content
-  h1 it works
+  .mdl-layout.mdl-js-layout
+    header.mdl-layout__header.mdl-layout__header--scroll
+      .mdl-layout__header-row
+        span.mdl-layout-title Startastic
+        .mdl-layout-spacer
+    main.mdl-layout__content
+      .page-content
+        .demo-card-square.mdl-card.mdl-shadow--2dp
+          .mdl-card__title.mdl-card--expand
+            h2.mdl-card__title-text Movie Title
+          .mdl-card__supporting-text lorem ipsum
+          .mdl-card__actions.mdl-card--border
+            a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect link

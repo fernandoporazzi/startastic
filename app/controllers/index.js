@@ -6,6 +6,10 @@ module.exports = {
     res.render('index', {
       title: 'Startastic'
     });
+  },
+
+  populate:(req, res) => {
+    res.json({message: 'populate database'});
   }
 
 };
