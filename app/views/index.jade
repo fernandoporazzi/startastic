@@ -17,4 +17,4 @@ block content
                 button.mdl-button.mdl-button--fab.mdl-button--mini-fab.mdl-button--colored(data-rate='#{v}', data-item='#{val._id}', data-js='vote-button')
                   i.material-icons #{v}
               .progress-bar
-                .progress-bar__completed(style='width: #{val.average}%')
+                .progress-bar__completed.transition(style='width: #{val.average}%', data-js='p-bar-#{val._id}')

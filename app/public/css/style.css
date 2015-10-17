@@ -25,3 +25,8 @@
   height: 5px;
   width: 50%;
 }
+
+.transition {
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}

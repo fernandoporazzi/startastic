@@ -3,6 +3,7 @@
 let MovieModel = require('../models');
 let fs = require('fs');
 let path = require('path');
+let average = require('../utils/average');
 
 module.exports = {
 
@@ -14,9 +15,8 @@ module.exports = {
 
       for (let i = 0; i < result.length; i++) {
         let self = result[i];
-        let med = self.stars.reduce((a, b) => a + b, 0) / self.stars.length;
 
-        result[i].average = med * 2 * 10;
+        result[i].average = average.calculateAverage(self);
       }
 
       res.render('index', {
@@ -52,7 +52,9 @@ module.exports = {
           return res.json({message: 'error while saving data'})
         }
 
-        return res.json({message: 'saved successfully'});
+        let avg = average.calculateAverage(result);
+
+        return res.json({movie: result, average: avg});
       });
     });
   },

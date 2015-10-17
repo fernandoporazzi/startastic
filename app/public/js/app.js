@@ -8,6 +8,13 @@
 
     var _xhr = new XMLHttpRequest();
 
+    var _updateProgressBar = function(item, average) {
+      var query = 'p-bar-' + item,
+        progressBar =  document.querySelector('[data-js="' + query + '"]');
+
+      progressBar.style.width = average + '%';
+    };
+
     var _vote = function(el) {
       var rate = el.getAttribute('data-rate'),
         item = el.getAttribute('data-item');
@@ -15,7 +22,9 @@
       _xhr.open('PUT', '/movie/' + item, true);
       _xhr.onload = function() {
         if (_xhr.status === 200 && _xhr.readyState === 4) {
-          console.log(_xhr.responseText);
+          var data = JSON.parse(_xhr.responseText);
+
+          _updateProgressBar(item, data.average);
         }
       };
       _xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
