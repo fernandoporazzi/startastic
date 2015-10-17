@@ -18,6 +18,7 @@
           console.log(_xhr.responseText);
         }
       };
+      _xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       _xhr.send('rate=' + rate);
     };
 
