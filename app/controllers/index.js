@@ -40,9 +40,20 @@ module.exports = {
   },
 
   update: (req, res) => {
-    console.log(req.body, req.params);
-    res.json({
-      message: 'hello from server =)'
+    MovieModel.findOne({_id: req.params.id}, (err, movie) => {
+      if (err) {
+        return res.json({message: 'error while finding movie'});
+      }
+
+      movie.stars.push(req.body.rate);
+
+      movie.save((err, result) => {
+        if (err) {
+          return res.json({message: 'error while saving data'})
+        }
+
+        return res.json({message: 'saved successfully'});
+      });
     });
   },
 
